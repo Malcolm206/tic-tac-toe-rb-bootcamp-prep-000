@@ -95,3 +95,15 @@ def winner(board)
     board[win]
   end
 end
+
+def play(board)
+  until over?(board)
+    value = current_player(board)
+    turn(board)
+  end
+  if winner(board)
+    puts "Congratulations #{winner(board)}!"
+  else
+    puts "Cat's Game!"
+  end
+end
