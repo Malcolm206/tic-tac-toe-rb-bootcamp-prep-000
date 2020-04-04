@@ -95,4 +95,3 @@ def winner(board)
     board[win]
   end
 end
-
